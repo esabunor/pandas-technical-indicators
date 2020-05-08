@@ -347,8 +347,8 @@ def true_strength_index(df, r, s):
     """Calculate True Strength Index (TSI) for given data.
     
     :param df: pandas.DataFrame
-    :param r: 
-    :param s: 
+    :param r: int 25 the larger period
+    :param s: int 13 the smaller of the periods
     :return: pandas.DataFrame
     """
     M = pd.Series(df['Close'].diff(1))
